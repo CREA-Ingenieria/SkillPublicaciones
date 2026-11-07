@@ -8,7 +8,7 @@
     {
       "name": "publicaciones-crea",
       "source": "./plugins/publicaciones-crea",
-      "description": "Publicaciones de Instagram con el estilo visual y el lenguaje de CREA (JPG, MP4 y caption)."
+      "description": "Publicaciones de Instagram con la identidad de CREA: tres estilos, versiones animadas, reel, mascotas y caption (JPG, MP4 y texto)."
     }
   ]
 }

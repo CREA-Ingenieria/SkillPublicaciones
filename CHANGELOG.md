@@ -2,6 +2,14 @@
 
 Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versiones: [semver](https://semver.org/lang/es/).
 
+## [1.3.1] - 2026-11-07
+
+### Agregado
+- `.claude/settings.json`: al abrir este repositorio en Claude Code (terminal o escritorio) y confiar en la carpeta, la skill se carga y se actualiza sola. Las sesiones en la nube no la cargan solas.
+
+### Cambiado
+- La descripción del plugin y del catálogo nombra los estilos, las versiones animadas, el reel y las mascotas.
+
 ## [1.3.0] - 2026-10-29
 
 ### Agregado

@@ -1,0 +1,11 @@
+{
+  "extraKnownMarketplaces": {
+    "crea-publicaciones": {
+      "source": { "source": "github", "repo": "CREA-Ingenieria/Presentaciones-Publicaciones" },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "publicaciones-crea@crea-publicaciones": true
+  }
+}

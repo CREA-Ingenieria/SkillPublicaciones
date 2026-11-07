@@ -198,6 +198,7 @@ Todo viene dentro del motor: no hay que instalar fuentes, ni ffmpeg, ni PowerPoi
 Presentaciones-Publicaciones/
 │
 ├── .claude-plugin/marketplace.json    # Catálogo para instalar con /plugin
+├── .claude/settings.json              # Carga la skill sola al abrir este repo en Claude Code
 ├── docs/readme/                       # Imágenes de este README (y el script que las genera)
 │
 └── plugins/publicaciones-crea/skills/publicaciones-crea/
@@ -233,6 +234,8 @@ En Claude Code:
 /plugin install publicaciones-crea@crea-publicaciones
 ```
 
+**En este repositorio no hace falta:** al abrir la carpeta en Claude Code (terminal o app de escritorio) y aceptar que confías en ella, la skill se carga sola y se actualiza sola (`.claude/settings.json`). Las sesiones en la nube (claude.ai/code) no la cargan solas: ahí corre los dos comandos de arriba. Si el repositorio es privado, tu git necesita acceso a la organización.
+
 Luego pásale a Claude las fotos del taller y lo que pasó, por ejemplo: *"hazme un carrusel de CREA con estas fotos del taller Mothbot con el Colegio Garcés Navas, en estilo arcade, estático y animado"*.
 
 ### Actualizar
@@ -242,7 +245,9 @@ Luego pásale a Claude las fotos del taller y lo que pasó, por ejemplo: *"hazme
 /plugin update publicaciones-crea@crea-publicaciones
 ```
 
-Después reinicia Claude Code.
+Después reinicia Claude Code. Quien la tiene cargada desde este repositorio recibe las versiones nuevas solo.
+
+**Para publicar una versión nueva**, sube `version` en `plugins/publicaciones-crea/.claude-plugin/plugin.json` (y en `motor/pyproject.toml` y `crea_publicaciones/__init__.py`): Claude Code solo entrega la actualización cuando la versión cambia.
 
 ### Probar sin instalar
 
